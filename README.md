@@ -22,29 +22,35 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - Disables autobhop (mimics KSF but also needed for zoning)
 
 ## TODO
-(last updated 2025/03/04)
+(last updated 2025/06/30)
 
-- Tier 1: 12/69
+- Tier 1: 24/72
+  - surf_1998: s3 skip lasers
+  - surf_4am: s4 easy skip fix, s7 key skip fix
   - surf_aircontrol_ksf: b1 impossible as shared triggers with main
 	  - needs targetname differentiation for tracks
 	- surf_akai_final: figure out how to fix cp1 teleport velocity
   - surf_awp_sk337_v3: needs a lot of stripper work and zones
-	- surf_beyond: test granis' teleport fix stripper config
-- Tier 2: 0/165
+  - surf_boreas: ksf has different checkpoints than triggers?
+  - surf_demise: checkpoints, b1 trigger weirdness
+  - surf_derpis_ksf: lasers
+  - surf_egypt2: lasers
+- Tier 2: 0/166
   - surf_progress_fix: figure out how the linear route will work
-  - surf_seaworld_fix: crashes after 2025/02/18 update
-- Tier 3: 0/254
-- Tier 4: 0/210
-- Tier 5: 0/97
-- Tier 6: 0/47
-- Tier 7: 0/28
-  - surf_gigapede: b3 and b6 crash after 2025/02/18 update
-- Tier 8: 0/5
+  - surf_seaworld_fix: remove spherical brushes
+- Tier 3: 0/255
+  - surf_s_t_a_t_i_o_n: remove spherical brushes, laser teleport
+- Tier 4: 0/213
+- Tier 5: 0/100
+- Tier 6: 0/50
+- Tier 7: 0/29
+  - surf_gigapede: remove spherical brushes
+- Tier 8: 0/6
 
 ### Timer
 These are just nice to haves and theres no guarantee I myself will implement them personally.
 
 - zones: optional targetname differentiation for tracks
 - zones-json: create file if not existing when calling editmi
-- zones-json: remove `possible_on_*`, maybe add actual metadata (authors, creation date)
+- zones-json: remove `possible_on_*`, maybe add actual metadata (maxvel, authors, creation date)
 - zones: custom zone names for bonus credits or maps like classics, progress
