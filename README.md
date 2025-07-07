@@ -23,7 +23,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - Requires [shavit-style-backwards](https://github.com/PMArkive/random-shavit-bhoptimer-stuff/blob/main/shavit-style-backwards.sp) for backwards style
 
 ## TODO
-(last updated 2025/07/06)
+(last updated 2025/07/07)
 
 - Tier 1: 48/72
   - surf_1998: s3 skip lasers
@@ -33,7 +33,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 	- surf_akai_final: figure out how to fix cp1 teleport velocity
   - surf_awp_sk337_v3: needs a lot of stripper work and zones
   - surf_boreas: ksf has different checkpoints than triggers?
-  - surf_demise: checkpoints, b1 trigger weirdness
+  - surf_demise: b1 trigger weirdness
   - surf_derpis_ksf: lasers
   - surf_egypt2: lasers
   - surf_funhouse_v1: bunch of stripper work
