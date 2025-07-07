@@ -20,11 +20,12 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - Removes styles that aren't relevant to surf
 - Sets `force_hsw` to `2` (surf variant) in half sideways
 - Disables autobhop (mimics KSF but also needed for zoning)
+- Requires [shavit-style-backwards](https://github.com/PMArkive/random-shavit-bhoptimer-stuff/blob/main/shavit-style-backwards.sp) for backwards style
 
 ## TODO
-(last updated 2025/06/30)
+(last updated 2025/07/06)
 
-- Tier 1: 33/72
+- Tier 1: 48/72
   - surf_1998: s3 skip lasers
   - surf_4am: s4 easy skip fix, s7 key skip fix
   - surf_aircontrol_ksf: b1 impossible as shared triggers with main
@@ -36,6 +37,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
   - surf_derpis_ksf: lasers
   - surf_egypt2: lasers
   - surf_funhouse_v1: bunch of stripper work
+  - surf_mesa_fixed: checkpoint 1 isnt exact on both sides but shrug
 - Tier 2: 0/166
   - surf_progress_fix: figure out how the linear route will work
   - surf_seaworld_fix: remove spherical brushes
