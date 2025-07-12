@@ -25,7 +25,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 ## TODO
 (last updated 2025/07/07)
 
-- Tier 1: 48/72
+- Tier 1: 50/72
   - surf_1998: s3 skip lasers
   - surf_4am: s4 easy skip fix, s7 key skip fix
   - surf_aircontrol_ksf: b1 impossible as shared triggers with main
