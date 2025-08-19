@@ -13,6 +13,11 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - Copy `addons/stripper`
 - Copy `addons/sourcemod/configs/shavit-mapfixes.cfg`
 
+> [!NOTE]
+> The mapfixes file includes `sv_maxvelocity` values, but it will not apply properly as mapfixes runs earlier than
+> reading zones from the database. **You will have to manually run `!setmaxvel` with the correct value** until zones-json
+> gets updated to supports importing and exporting max velocity
+
 ## Extras
 `cfg` folder exists as a lazy copy-paste for the first steps.
 
