@@ -30,12 +30,11 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 ## TODO
 (last updated 2025/07/07)
 
-- Tier 1: 50/72
+- Tier 1: 55/72
   - surf_1998: s3 skip lasers
   - surf_4am: s4 easy skip fix, s7 key skip fix
-  - surf_aircontrol_ksf: b1 impossible as shared triggers with main
-	  - needs targetname differentiation for tracks
-	- surf_akai_final: figure out how to fix cp1 teleport velocity
+  - surf_aircontrol_ksf: targetname filtering doesnt set proper track when entering zone
+  - surf_akai_final: figure out how to fix cp1 teleport velocity
   - surf_awp_sk337_v3: needs a lot of stripper work and zones
   - surf_boreas: ksf has different checkpoints than triggers?
   - surf_demise: b1 trigger weirdness
@@ -43,6 +42,9 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
   - surf_egypt2: lasers
   - surf_funhouse_v1: bunch of stripper work
   - surf_mesa_fixed: checkpoint 1 isnt exact on both sides but shrug
+  - surf_pox: stripper
+  - surf_prime_time_r3vamp: stripper
+  - surf_rebel_resistance_final3: stripper
 - Tier 2: 0/166
   - surf_progress_fix: figure out how the linear route will work
   - surf_seaworld_fix: remove spherical brushes
