@@ -1,6 +1,4 @@
 # surf-zones
-~~zero-eight-seven if it was good~~
-
 Collection of zones and configs for [Shavit-Surf-Timer](https://github.com/bhopppp/Shavit-Surf-Timer).
 Attempts to mimic KSF's zoning and stripper files as best as possible.
 
@@ -27,40 +25,1004 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - Disables autobhop (mimics KSF but also needed for zoning)
 - Requires [shavit-style-backwards](https://github.com/PMArkive/random-shavit-bhoptimer-stuff/blob/main/shavit-style-backwards.sp) for backwards style
 
-## TODO
-(last updated 2025/07/07)
+## Map List + Notes
+(last updated 2025/08/19)
 
-- Tier 1: 55/72
-  - surf_1998: s3 skip lasers
-  - surf_4am: s4 easy skip fix, s7 key skip fix
-  - surf_aircontrol_ksf: targetname filtering doesnt set proper track when entering zone
-  - surf_akai_final: figure out how to fix cp1 teleport velocity
-  - surf_awp_sk337_v3: needs a lot of stripper work and zones
-  - surf_boreas: ksf has different checkpoints than triggers?
-  - surf_demise: b1 trigger weirdness
-  - surf_derpis_ksf: lasers
-  - surf_egypt2: lasers
-  - surf_funhouse_v1: bunch of stripper work
-  - surf_mesa_fixed: checkpoint 1 isnt exact on both sides but shrug
-  - surf_pox: stripper
-  - surf_prime_time_r3vamp: stripper
-  - surf_rebel_resistance_final3: stripper
-- Tier 2: 0/166
-  - surf_progress_fix: figure out how the linear route will work
-  - surf_seaworld_fix: remove spherical brushes
-- Tier 3: 0/255
-  - surf_s_t_a_t_i_o_n: remove spherical brushes, laser teleport
-- Tier 4: 0/213
-- Tier 5: 0/100
-- Tier 6: 0/50
-- Tier 7: 0/29
-  - surf_gigapede: remove spherical brushes
-- Tier 8: 0/6
+<details>
+<summary>Tier 1 (55/73)</summary>
+- [x] surf_1998 - 5 stages, 1 bonus
+  - Stage 3 skip needs lasers
+  - Stage 3 needs booster fix fix (OnStartTouch -> OnEndTouch)
+- [x] surf_4am - 7 stages, 6 bonuses
+  - Start zone realignment (592 400 14272 -> 600 408 14272)
+  - Stage 4 needs skip fix (direct entry into first teleport)
+  - Stage 7 needs skip fix (trigger into cave that requires key)
+- [x] surf_ace - 8 stages, 1 bonus
+- [x] surf_aircontrol_ksf - 5 checkpoints, 2 bonuses
+  - Bonus requires command to set track properly despite player's targetname (very minor issue, requires fix in timer)
+- [x] surf_akai_final - 2 checkpoints
+  - Teleport into checkpoint 1 carries velocity which pushes the player backwards, wastes time walking forward
+- [x] surf_andromeda - 2 checkpoints, 1 bonus - maxvel: 5000
+- [x] surf_apollo - 3 checkpoints, 6 bonuses - maxvel: 10000
+- [x] surf_artois - 5 stages, 5 bonuses
+- [x] surf_aser - 6 stages
+- [x] surf_aura - 6 stages, 8 bonuses
+- [ ] surf_awp_sk337_v3 - 3 checkpoints
+  - Needs heavy Stripper work to remove combat logic (long start wait time, jail teleports I think)
+- [x] surf_beginner - 7 stages
+- [x] surf_benevolent_refix - 7 stages, 1 bonus
+- [x] surf_beyond - 10 stages, 2 bonuses
+  - Uses Stripper file from granis that removes teleport delay, times will be faster than on KSF
+- [x] surf_beyond2 - 5 stages, 2 bonuses - maxvel: 5000
+- [x] surf_borderlands - 7 stages
+- [x] surf_boreas - 2 checkpoints - maxvel: 5000
+- [x] surf_botanica - 4 stages, 6 bonuses
+- [x] surf_calycate_ksf - 2 checkpoints, 1 bonus
+- [x] surf_calycate2 - 2 checkpoints, 1 bonus
+- [ ] surf_chaos_fix - 3 stages, 1 bonus
+  - Lasers on start platform and various walls
+  - <sub><sub>remove the screamer room triggers</sub></sub>
+- [x] surf_citypop - 2 checkpoints, 4 bonuses - maxvel: 5000
+- [x] surf_deathstar - 6 stages
+- [x] surf_demise - 2 checkpoints, 1 bonus - maxvel: 5000
+  - Bonus reset trigger is extremely buggy with the timer for some reason
+- [x] surf_derpis_ksf - 6 stages
+  - Lasers on stage 5 and stage 6 trigger edges
+- [x] surf_egypt2 - 2 checkpoints, 1 bonus
+  - Lasers on the ravine and tunnel ramps
+- [x] surf_enlightened_ksf - 2 checkpoints, 3 bonuses - maxvel: 10000
+- [x] surf_flow_ksf - 2 checkpoints, 3 bonuses - maxvel: 4500
+- [x] surf_forgotten - 2 checkpoints, 6 bonuses
+- [x] surf_fornax - 2 checkpoints, 7 bonuses - maxvel: 5000
+- [x] surf_frost - 2 checkpoints, 8 bonuses
+- [ ] surf_funhouse_v1 - 3 checkpoints
+  - Stripper work is needed to pause all the moving things and redirect jail teleports
+- [x] surf_garden - 10 stages, 3 bonuses
+- [x] surf_gradent - 6 stages, 1 bonus - maxvel: 10000
+- [x] surf_hourglass - 2 checkpoints - maxvel: 5000
+- [x] surf_kepler - 9 stages, 2 bonuses
+  - Some of the zones are a bit eronious as the triggers won't hook properly (non-issue unless it wants to be investigated)
+- [x] surf_kitsune - 9 stages
+- [x] surf_lament_ksf - 3 checkpoints, 1 bonus
+- [x] surf_leet_xl_beta7z - 1 checkpoint
+- [x] surf_legends - 4 checkpoints
+- [x] surf_lessons - 7 stages, 3 bonuses
+- [x] surf_listless_ksf - 9 stages, 5 bonuses - maxvel: 10000
+- [x] surf_lovetunel - 2 checkpoints
+- [x] surf_lux - 3 checkpoints
+- [x] surf_me - 5 stages, 4 bonuses - maxvel: 10000
+- [x] surf_mesa_fixed - 3 checkpoints
+  - Checkpoint 1 triggers are not equally aligned on both sides
+- [x] surf_minuet_ksf - 3 checkpoints
+- [x] surf_mom_fix - 6 stages, 1 bonus
+- [x] surf_n_turf - 6 stages, 10 bonuses - maxvel: 10000
+- [x] surf_network2008_final - 3 checkpoints, 1 bonus
+  - Forgot this map has a bonus, needs to be zoned
+- [x] surf_nuclear - 2 stages, 2 bonuses
+  - Missing autobhop zone for top of end
+- [x] surf_nyx - 2 checkpoints, 3 bonuses - maxvel: 4000
+- [x] surf_pantheon - 3 checkpoints, 3 bonuses - maxvel: 10000
+- [ ] surf_pox - 2 checkpoints
+  - Stripper jail teleports
+- [x] surf_prelude_fix - 3 checkpoints
+- [ ] surf_prime_time_r3vamp - 2 stages
+  - Stripper jail teleports and remove breakable windows on stage 2
+- [x] surf_race_final - 6 stages, 5 bonuses - maxvel: 10000
+- [ ] surf_rebel_resistance_final3 - 2 checkpoints
+  - Stripper breakable windows and jail teleports
+- [x] surf_rebel_scaz_ksf - 2 checkpoints, 1 bonus
+- [x] surf_santorini_ksf - 8 stages, 5 bonuses
+- [x] surf_satellite_fix - 2 checkpoints
+- [ ] surf_school_fix - 10 stages, 1 bonus
+- [ ] surf_sodacity - 5 stages, 6 bonuses
+- [ ] surf_summit - 3 checkpoints, 3 bonuses
+- [ ] surf_sundown - 4 checkpoints
+- [ ] surf_tendies - 4 checkpoints, 3 bonuses - maxvel: 5000
+- [ ] surf_trance - 4 checkpoints, 1 bonus
+- [x] surf_utopia_njv - 3 checkpoints
+- [ ] surf_void - 2 checkpoints - maxvel: 5000
+- [ ] surf_water_run_ksf - 4 stages, 1 bonus
+- [ ] surf_whiteout - 6 stages, 1 bonus
+- [ ] surf_year3000 - 2 stages
+- [ ] surf_zoomathon - 7 checkpoints - maxvel: 5000
+</details>
 
-### Timer
-These are just nice to haves and theres no guarantee I myself will implement them personally.
+<details>
+<summary>Tier 2 (0/166)</summary>
+- [ ] surf_004_fix - 3 checkpoints
+- [ ] surf_2pacisalive - 2 checkpoints, 1 bonus - maxvel: 5000
+- [ ] surf_4head - 3 checkpoints, 4 bonuses
+- [ ] surf_6 - 2 checkpoints, 1 bonus
+- [ ] surf_81st_network - 5 stages, 1 bonus
+- [ ] surf_8bit - 3 stages, 1 bonus
+- [ ] surf_abandoned - 5 checkpoints, 4 bonuses
+- [ ] surf_activation - 4 stages, 4 bonuses
+- [ ] surf_aether - 4 checkpoints
+- [ ] surf_agony - 3 checkpoints, 1 bonus
+- [ ] surf_amplitude_encore - 5 checkpoints
+- [ ] surf_amplitude_light - 3 checkpoints
+- [ ] surf_and_destroy_fix - 3 checkpoints, 2 bonuses
+- [ ] surf_annoyance_njv - 8 stages
+- [ ] surf_anoobis - 3 stages, 10 bonuses
+- [ ] surf_anzchamps - 8 stages, 1 bonus
+- [ ] surf_aqua_fix - 3 checkpoints, 1 bonus
+- [ ] surf_aquaflow - 2 checkpoints
+- [ ] surf_arcade - 6 stages, 1 bonus
+- [ ] surf_ardon_fix - 2 checkpoints, 6 bonuses - maxvel: 5000
+- [ ] surf_autumn_fix - 5 stages, 2 bonuses
+- [ ] surf_beginner2 - 7 stages, 4 bonuses
+- [ ] surf_believe - 4 stages, 3 bonuses
+- [ ] surf_beverages_remix - 8 stages, 3 bonuses
+- [ ] surf_bluewall_v2 - 4 stages, 3 bonuses
+- [ ] surf_boogie_woogie - 4 stages, 6 bonuses
+- [ ] surf_boring - 16 stages
+- [ ] surf_calzone - 4 stages, 1 bonus - maxvel: 5000
+- [ ] surf_classics - 10 stages
+- [ ] surf_classics2 - 9 stages - maxvel: 8000
+- [ ] surf_commune_beta11 - 9 stages
+- [ ] surf_crzyfrog_reloaded - 3 stages
+- [ ] surf_cyberwave - 2 stages, 1 bonus - maxvel: 7500
+- [ ] surf_deadline - 4 stages, 2 bonuses
+- [ ] surf_delight - 3 checkpoints, 3 bonuses
+- [ ] surf_delusional - 8 stages
+- [ ] surf_destruction - 4 stages
+- [ ] surf_devs_ksf - 10 stages, 3 bonuses
+- [ ] surf_domain - 3 checkpoints, 2 bonuses
+- [ ] surf_doodles_njv - 9 stages, 1 bonus
+- [ ] surf_dragon - 3 checkpoints, 1 bonus
+- [ ] surf_driftless - 3 checkpoints, 1 bonus
+- [ ] surf_duggywuggy - 3 checkpoints, 1 bonus
+- [ ] surf_ebony - 4 checkpoints, 4 bonuses - maxvel: 5000
+- [ ] surf_echo - 2 checkpoints, 3 bonuses
+- [ ] surf_eclipse - 3 stages
+- [ ] surf_eggplant - 3 checkpoints, 3 bonuses
+- [ ] surf_elements_beta3 - 6 stages, 1 bonus
+- [ ] surf_elites_v2 - 2 checkpoints, 1 bonus
+- [ ] surf_epicube - 3 checkpoints, 2 bonuses - maxvel: 5000
+- [ ] surf_ethereal - 3 stages, 2 bonuses
+- [ ] surf_everdark - 2 checkpoints
+- [ ] surf_exocube - 5 stages
+- [ ] surf_exurbia_v2 - 5 stages, 1 bonus
+- [ ] surf_faint_fix - 3 checkpoints, 2 bonuses
+- [ ] surf_flyin_fortress_fix - 2 checkpoints, 1 bonus
+- [ ] surf_forbidden_ways_ksf - 6 checkpoints, 1 bonus
+- [ ] surf_fortum_fix - 5 stages, 2 bonuses
+- [ ] surf_frey_remake - 3 stages, 2 bonuses - maxvel: 3850
+- [ ] surf_fuchnut - 3 checkpoints, 4 bonuses
+- [ ] surf_funhouse2 - 3 checkpoints, 7 bonuses
+- [ ] surf_glass7_ksf - 3 checkpoints
+- [ ] surf_glass9 - 2 checkpoints
+- [ ] surf_gleam - 2 checkpoints, 2 bonuses
+- [ ] surf_gleam2 - 4 stages, 4 bonuses - maxvel: 5000
+- [ ] surf_graphia - 3 checkpoints, 1 bonus
+- [ ] surf_grassland - 2 checkpoints
+- [ ] surf_greek_ksf - 7 stages, 3 bonuses
+- [ ] surf_greensway - 2 checkpoints
+- [ ] surf_guitar_hi - 2 checkpoints, 1 bonus
+- [ ] surf_halloween_tf2 - 6 checkpoints
+- [ ] surf_happyhands - 3 checkpoints, 2 bonuses
+- [ ] surf_harmony_fix - 5 stages, 3 bonuses
+- [ ] surf_heaven_njv - 6 stages, 1 bonus
+- [ ] surf_holiday - 4 stages
+- [ ] surf_hotwheels_fix - 3 checkpoints, 8 bonuses
+- [ ] surf_hurrr - 3 checkpoints
+- [ ] surf_illusion - 10 stages, 3 bonuses - maxvel: 5000
+- [ ] surf_imex - 5 stages
+- [ ] surf_in_space - 3 stages, 1 bonus - maxvel: 5000
+- [ ] surf_indecisive - 2 checkpoints, 1 bonus - maxvel: 5000
+- [ ] surf_ing - 6 checkpoints, 2 bonuses
+- [ ] surf_inspire - 3 checkpoints, 1 bonus
+- [ ] surf_instantdeath - 0 checkpoints, 4 bonuses
+- [ ] surf_interference - 2 checkpoints - maxvel: 10000
+- [ ] surf_interstellar - 5 stages, 1 bonus
+- [ ] surf_island - 5 checkpoints
+- [ ] surf_ivory - 3 checkpoints, 3 bonuses - maxvel: 5000
+- [ ] surf_journeys - 2 checkpoints, 3 bonuses
+- [ ] surf_juturna - 3 checkpoints, 1 bonus
+- [ ] surf_kismet - 4 checkpoints, 2 bonuses
+- [ ] surf_kloakk - 3 checkpoints, 4 bonuses
+- [ ] surf_klue - 2 checkpoints, 1 bonus
+- [ ] surf_korn - 4 stages, 3 bonuses
+- [ ] surf_kvas - 3 checkpoints, 4 bonuses
+- [ ] surf_kz_mix_journeys - 5 checkpoints, 3 bonuses
+- [ ] surf_kz_protraining - 16 stages, 4 bonuses
+- [ ] surf_leidenfrost - 4 checkpoints, 1 bonus - maxvel: 10000
+- [ ] surf_lies_ksf - 5 stages
+- [ ] surf_lockdown - 2 checkpoints, 2 bonuses
+- [ ] surf_lore - 7 stages, 2 bonuses
+- [ ] surf_lullaby_ksf - 4 checkpoints
+- [ ] surf_mate - 3 checkpoints, 5 bonuses - maxvel: 5000
+- [ ] surf_mellow - 3 checkpoints
+- [ ] surf_mesa_mine - 5 checkpoints, 1 bonus
+- [ ] surf_mwag_reloaded - 14 stages, 5 bonuses
+- [ ] surf_nebula - 3 checkpoints, 3 bonuses
+- [ ] surf_network_2009 - 3 checkpoints
+- [ ] surf_noble - 5 stages, 1 bonus
+- [ ] surf_not_so_disaster - 3 checkpoints, 5 bonuses - maxvel: 5000
+- [ ] surf_not_so_sinister_ksf - 5 stages, 3 bonuses
+- [ ] surf_nova - 3 checkpoints, 3 bonuses - maxvel: 4000
+  - Extend checkpoint into barred window
+- [ ] surf_ny_momentum_v3_1 - 2 checkpoints
+- [ ] surf_ny_platinum - 6 stages, 1 bonus
+- [ ] surf_ny_superhappiest_b3 - 4 stages
+- [ ] surf_odyssey - 3 checkpoints
+- [ ] surf_orthodox - 16 stages, 4 bonuses
+- [ ] surf_palais - 3 checkpoints
+- [ ] surf_palm - 3 checkpoints, 2 bonuses
+- [ ] surf_papertown - 2 checkpoints, 5 bonuses
+- [ ] surf_pathfinder - 4 checkpoints
+- [ ] surf_perennial - 2 stages, 3 bonuses
+- [ ] surf_pipeline - 3 checkpoints, 5 bonuses - maxvel: 4500
+- [ ] surf_premium - 8 stages, 2 bonuses
+- [ ] surf_presmon_fix - 6 stages
+- [ ] surf_progress_fix - 5 stages
+  - Linear route needs special flag to allow checkpoint skipping (if the timer even has checkpoint anti-skip?)
+- [ ] surf_psycho - 6 stages, 2 bonuses
+- [ ] surf_quirky - 2 checkpoints, 9 bonuses - maxvel: 10000
+- [ ] surf_ravine - 3 checkpoints
+- [ ] surf_reprise - 3 checkpoints, 2 bonuses - maxvel: 4000
+- [ ] surf_rez - 6 stages, 2 bonuses
+- [ ] surf_rocco_v2 - 2 checkpoints, 3 bonuses
+- [ ] surf_rookie - 18 stages
+- [ ] surf_salvador_ksf - 2 checkpoints, 1 bonus
+- [ ] surf_sanctuary - 5 stages, 3 bonuses
+- [ ] surf_sandtrap - 2 checkpoints, 3 bonuses
+- [ ] surf_sandtrap2 - 3 checkpoints, 4 bonuses - maxvel: 7500
+- [ ] surf_saturday - 3 checkpoints, 2 bonuses
+- [ ] surf_seaworld_fix - 2 checkpoints
+  - Stripper out spherical brushes (x64 update crashfix)
+- [ ] surf_semesterbreak - 2 checkpoints, 2 bonuses - maxvel: 4000
+- [ ] surf_shy - 2 checkpoints, 2 bonuses - maxvel: 5000
+- [ ] surf_simpsons_source - 10 stages, 4 bonuses
+- [ ] surf_skipalot - 3 checkpoints, 4 bonuses
+- [ ] surf_slob - 7 stages, 1 bonus
+- [ ] surf_smart - 3 checkpoints, 1 bonus
+- [ ] surf_spacejam - 6 stages, 1 bonus
+- [ ] surf_spooky - 2 checkpoints
+- [ ] surf_squirrelsonvacation - 3 checkpoints, 1 bonus
+- [ ] surf_stonks - 2 stages, 2 bonuses
+- [ ] surf_summer_ksf - 11 stages, 1 bonus
+- [ ] surf_sunnyhappylove - 4 stages
+- [ ] surf_syria - 8 stages
+- [ ] surf_tensile_njv - 4 checkpoints - maxvel: 10000
+- [ ] surf_the_gloaming - 3 checkpoints
+- [ ] surf_tomb_redone - 3 checkpoints
+- [ ] surf_tranquil - 3 checkpoints, 3 bonuses
+- [ ] surf_tuscany - 8 stages, 4 bonuses
+- [ ] surf_twilight_njv - 4 checkpoints, 2 bonuses
+- [ ] surf_verge - 2 checkpoints
+- [ ] surf_waterworks - 3 checkpoints
+- [ ] surf_whatever - 3 stages, 2 bonuses
+- [ ] surf_wood - 3 checkpoints, 1 bonus
+- [ ] surf_zbig_ksf - 7 stages, 2 bonuses
+- [ ] surf_zealand - 3 checkpoints, 2 bonuses
+- [ ] surf_zenith - 3 checkpoints, 1 bonus
+- [ ] surf_zor - 2 checkpoints, 1 bonus - maxvel: 5000
+</details>
 
-- zones: optional targetname differentiation for tracks
+<details>
+<summary>Tier 3 (0/256)</summary>
+- [ ] surf_1day - 11 stages, 1 bonus
+- [ ] surf_2012_beta12 - 6 stages, 1 bonus
+- [ ] surf_a - 5 stages
+- [ ] surf_abstinens - 5 stages
+- [ ] surf_acp_fix - 9 stages
+- [ ] surf_adtr_njv - 4 stages, 1 bonus
+- [ ] surf_aeron - 2 checkpoints, 1 bonus
+- [ ] surf_amateur_v2b - 6 stages, 1 bonus
+- [ ] surf_amplitude_apex - 3 stages
+- [ ] surf_animals_ksf - 11 stages, 1 bonus
+- [ ] surf_anthropomorphic - 10 stages, 1 bonus
+- [ ] surf_arghmyeyes_retexture - 4 checkpoints
+- [ ] surf_asrown - 2 stages, 1 bonus
+- [ ] surf_ataque_final - 6 stages
+- [ ] surf_auroria_ksf - 6 stages, 1 bonus
+- [ ] surf_awakening - 4 stages, 1 bonus
+- [ ] surf_b_r_o_x_x_x - 5 stages
+- [ ] surf_banger - 11 stages, 1 bonus
+- [ ] surf_bbb - 6 stages, 2 bonuses
+- [ ] surf_be_gentle - 4 stages, 2 bonuses
+- [ ] surf_ben10 - 4 checkpoints, 10 bonuses - maxvel: 10000
+- [ ] surf_bikini_bottom - 6 stages, 7 bonuses
+- [ ] surf_blackout - 5 checkpoints
+- [ ] surf_bluewinter - 3 checkpoints, 1 bonus - maxvel: 10000
+- [ ] surf_bnw_njv - 4 checkpoints, 1 bonus
+- [ ] surf_bob - 11 stages, 1 bonus
+- [ ] surf_bork_nbv - 7 stages, 1 bonus
+- [ ] surf_bumpybusride - 3 stages, 1 bonus
+- [ ] surf_calamity_njv - 5 stages
+- [ ] surf_canisius - 5 stages
+- [ ] surf_canisius2_fix - 5 stages
+- [ ] surf_cartoon - 5 stages, 1 bonus
+- [ ] surf_cavemissile_fix - 3 checkpoints, 4 bonuses - maxvel: 5000
+- [ ] surf_christmas - 9 stages, 2 bonuses
+- [ ] surf_christmas2 - 9 stages, 1 bonus
+- [ ] surf_christmas3 - 8 stages, 1 bonus
+- [ ] surf_collection_njv - 8 stages
+- [ ] surf_colony - 3 checkpoints - maxvel: 10000
+- [ ] surf_color_fix - 6 stages, 1 bonus
+- [ ] surf_commune_again_beta5 - 7 stages
+- [ ] surf_compact - 5 stages
+- [ ] surf_compulsive_njv - 4 stages
+- [ ] surf_concept - 7 stages
+- [ ] surf_cookiejar - 3 checkpoints
+- [ ] surf_coralis_ksf - 3 checkpoints, 2 bonuses
+- [ ] surf_cosmo - 3 checkpoints, 2 bonuses
+- [ ] surf_crank - 4 checkpoints, 5 bonuses
+- [ ] surf_creation - 5 stages, 1 bonus
+- [ ] surf_crystal - 6 stages, 2 bonuses
+- [ ] surf_cubic_ksf - 28 stages
+- [ ] surf_cyanide - 3 checkpoints
+- [ ] surf_cyka_ksf - 4 stages, 2 bonuses
+- [ ] surf_deceptive_final - 5 stages, 1 bonus
+- [ ] surf_depressing - 12 stages
+- [ ] surf_depths - 5 checkpoints, 1 bonus
+- [ ] surf_destiny_fixed - 3 checkpoints
+- [ ] surf_deteriorate - 2 checkpoints
+- [ ] surf_dhyana - 5 stages, 2 bonuses
+- [ ] surf_diminsion - 3 checkpoints, 2 bonuses
+- [ ] surf_distraction_v2 - 5 stages, 1 bonus
+- [ ] surf_diverge - 5 stages, 1 bonus
+- [ ] surf_dusk - 6 stages, 1 bonus
+- [ ] surf_dynasty - 2 checkpoints, 1 bonus
+- [ ] surf_ecosystem - 4 checkpoints
+- [ ] surf_elixor - 9 stages
+- [ ] surf_ember - 5 stages
+- [ ] surf_entropy_finalv2 - 5 stages
+- [ ] surf_epic - 7 stages, 1 bonus
+- [ ] surf_era - 12 checkpoints, 3 bonuses
+- [ ] surf_eunoia - 3 checkpoints, 3 bonuses
+- [ ] surf_executioner - 4 checkpoints, 2 bonuses
+- [ ] surf_exogenesis - 2 checkpoints, 1 bonus
+- [ ] surf_extremex - 8 stages
+- [ ] surf_exurbia2 - 4 checkpoints, 1 bonus
+- [ ] surf_exxak - 5 stages
+- [ ] surf_ezclap - 5 stages, 1 bonus
+- [ ] surf_fantasy - 4 stages
+  - Stage 1 stump laser
+  - Some filtering is broken sometimes (OnTrigger -> OnStartTouch)
+- [ ] surf_fast - 4 stages, 3 bonuses - maxvel: 10000
+- [ ] surf_fiellu_ksf - 3 checkpoints, 4 bonuses - maxvel: 4000
+- [ ] surf_flatliners - 3 checkpoints, 1 bonus
+- [ ] surf_fractal - 5 stages, 2 bonuses - maxvel: 5000
+- [ ] surf_frequency_njv - 4 checkpoints, 2 bonuses
+- [ ] surf_frey2_ksf - 2 checkpoints, 2 bonuses
+- [ ] surf_friday - 6 stages, 1 bonus
+- [ ] surf_froots_ksf - 18 stages, 8 bonuses
+- [ ] surf_fruits - 10 stages, 1 bonus
+- [ ] surf_fruits2 - 16 stages, 1 bonus
+- [ ] surf_furios - 6 stages
+- [ ] surf_globalchaos - 3 stages, 1 bonus
+- [ ] surf_golden_refix - 6 checkpoints, 3 bonuses
+- [ ] surf_happyhands2 - 2 checkpoints, 4 bonuses
+- [ ] surf_happyhands3 - 3 checkpoints, 3 bonuses
+- [ ] surf_happyhands4 - 5 checkpoints, 2 bonuses
+- [ ] surf_happyhands5 - 4 checkpoints, 2 bonuses
+- [ ] surf_healthy - 10 stages, 1 bonus
+- [ ] surf_helium_fix - 6 stages
+- [ ] surf_hellenic - 2 checkpoints, 1 bonus - maxvel: 5000
+- [ ] surf_hob - 3 checkpoints, 2 bonuses
+- [ ] surf_honour - 4 stages, 3 bonuses - maxvel: 5000
+- [ ] surf_huh - 2 checkpoints, 6 bonuses
+- [ ] surf_iceworld - 3 checkpoints, 1 bonus
+- [ ] surf_imagine_fix - 7 stages
+- [ ] surf_impact - 6 stages
+- [ ] surf_industries - 4 checkpoints
+- [ ] surf_inner - 5 checkpoints - maxvel: 6000
+- [ ] surf_inrage - 2 checkpoints
+- [ ] surf_insideout_final - 3 checkpoints
+- [ ] surf_jaqen2 - 4 checkpoints, 3 bonuses
+- [ ] surf_jenocide - 5 stages, 1 bonus
+- [ ] surf_jizznipples - 5 stages
+- [ ] surf_kaaba - 4 stages, 1 bonus
+- [ ] surf_kawaii - 4 stages
+- [ ] surf_kitsune2 - 12 stages, 4 bonuses
+- [ ] surf_krow10 - 3 checkpoints, 1 bonus
+- [ ] surf_leesriize_ksf - 3 stages, 4 bonuses - maxvel: 6000
+- [ ] surf_liberation - 7 stages, 1 bonus
+- [ ] surf_liberation2 - 7 stages, 2 bonuses
+- [ ] surf_life_of_cow - 5 stages, 2 bonuses
+- [ ] surf_lighthouse - 4 stages
+- [ ] surf_like_this - 5 checkpoints, 4 bonuses
+- [ ] surf_lithium - 5 stages, 1 bonus
+- [ ] surf_lodypreview - 13 stages
+- [ ] surf_lolrevlis2 - 2 checkpoints, 1 bonus
+- [ ] surf_lost - 4 stages, 4 bonuses
+- [ ] surf_lost2 - 4 stages, 4 bonuses
+- [ ] surf_low_production - 3 stages, 2 bonuses
+- [ ] surf_luminaris_refix - 3 stages, 6 bonuses
+- [ ] surf_marbleblast_intermediate - 4 checkpoints, 1 bonus
+- [ ] surf_mash-up - 20 stages
+- [ ] surf_meme - 9 stages, 2 bonuses
+- [ ] surf_mesa_aether - 6 checkpoints
+- [ ] surf_methadone - 5 stages, 1 bonus
+- [ ] surf_midsommar - 3 stages, 4 bonuses
+- [ ] surf_milkyway - 3 checkpoints
+- [ ] surf_minigolf_ksf - 7 stages, 2 bonuses
+- [ ] surf_minimumwage - 6 stages, 1 bonus
+- [ ] surf_missing_no - 4 checkpoints
+- [ ] surf_morbid - 6 stages
+- [ ] surf_mushroom_ksf - 4 checkpoints, 1 bonus
+- [ ] surf_mynah_final - 4 stages
+- [ ] surf_nac - 4 stages, 2 bonuses
+- [ ] surf_network_2013 - 3 checkpoints
+- [ ] surf_networked - 3 checkpoints
+- [ ] surf_not_quite_goliath - 2 checkpoints - maxvel: 10000
+- [ ] surf_not_so_generated - 10 stages, 3 bonuses
+- [ ] surf_ny_advance - 10 stages
+- [ ] surf_ny_momentum2_ksf - 7 checkpoints, 1 bonus
+- [ ] surf_oasis - 10 stages, 2 bonuses
+- [ ] surf_ofrenda - 3 checkpoints, 6 bonuses - maxvel: 10000
+- [ ] surf_ofsfice - 2 checkpoints, 1 bonus
+- [ ] surf_olympics - 7 stages
+- [ ] surf_omnibus - 11 stages
+- [ ] surf_oompa_loompa - 3 checkpoints
+- [ ] surf_ori_l - 6 checkpoints
+- [ ] surf_outside - 10 stages, 5 bonuses
+- [ ] surf_pagoda - 2 checkpoints, 3 bonuses
+- [ ] surf_palette_fix - 9 stages
+- [ ] surf_pandemonium_njv - 5 stages, 2 bonuses
+- [ ] surf_pandora - 3 checkpoints
+- [ ] surf_paranoid_enigma - 5 stages
+- [ ] surf_parc_colore - 6 stages, 4 bonuses
+- [ ] surf_parrot_selector - 4 checkpoints
+- [ ] surf_pavilion - 5 stages
+- [ ] surf_perforated_restored - 5 stages
+- [ ] surf_petrus - 3 checkpoints
+- [ ] surf_placid - 3 checkpoints, 1 bonus
+- [ ] surf_plaguelands_beta7a - 6 stages, 1 bonus
+- [ ] surf_plethora_fix - 2 checkpoints
+- [ ] surf_pogchamp - 4 stages
+- [ ] surf_porn_fix - 4 checkpoints
+- [ ] surf_portal_game4 - 6 stages
+- [ ] surf_prevail - 2 checkpoints, 1 bonus
+- [ ] surf_prismatic_ksf - 2 checkpoints, 1 bonus
+- [ ] surf_prosaic - 5 stages
+- [ ] surf_proximity_final - 6 stages, 1 bonus
+  - Move start trigger to edge (hook as box form and adjust it from there)
+- [ ] surf_psi_fixed - 3 stages
+- [ ] surf_psychedelia - 2 checkpoints, 1 bonus
+- [ ] surf_purgatory - 6 stages
+- [ ] surf_quantum_njv - 3 checkpoints
+- [ ] surf_quasar_final - 4 stages, 1 bonus
+- [ ] surf_queen_of_the_ween - 2 checkpoints, 3 bonuses - maxvel: 10000
+- [ ] surf_quilavar - 3 checkpoints
+- [ ] surf_rapid - 5 stages, 1 bonus
+- [ ] surf_raqqit - 2 checkpoints, 2 bonuses
+- [ ] surf_razer_final - 4 stages
+- [ ] surf_reactor - 3 checkpoints
+- [ ] surf_resort - 4 checkpoints - maxvel: 10000
+- [ ] surf_retroartz - 3 checkpoints
+- [ ] surf_ripper - 4 stages, 1 bonus
+- [ ] surf_rise - 2 checkpoints, 8 bonuses
+- [ ] surf_roman_v2 - 2 checkpoints, 1 bonus
+- [ ] surf_s_t_a_t_i_o_n - 7 stages
+  - Stripper out spherical brush (x64 update crashfix) and laser the teleport where said brush is
+- [ ] surf_sandbrick - 5 stages
+- [ ] surf_sanding_ksf - 6 stages
+- [ ] surf_sandstorm2 - 4 stages, 1 bonus
+- [ ] surf_sanguine - 6 stages, 1 bonus - maxvel: 5000
+- [ ] surf_scarlet_ksf - 3 checkpoints, 4 bonuses
+- [ ] surf_sci_fi - 3 stages
+- [ ] surf_seaside - 7 stages, 3 bonuses
+- [ ] surf_second - 3 checkpoints, 1 bonus
+- [ ] surf_sequoia_fix - 3 stages, 2 bonuses
+- [ ] surf_serenity - 3 stages, 3 bonuses
+- [ ] surf_simpsons2 - 5 stages, 4 bonuses - maxvel: 4000
+- [ ] surf_sinner_ksf - 3 stages, 4 bonuses - maxvel: 10000
+- [ ] surf_sinsane_ez - 4 checkpoints, 1 bonus
+- [ ] surf_sirius - 4 checkpoints, 3 bonuses - maxvel: 10000
+- [ ] surf_sketchy - 2 checkpoints, 3 bonuses
+- [ ] surf_sky_ages - 4 stages
+- [ ] surf_slob2_fix - 7 stages
+- [ ] surf_slobs - 16 stages, 2 bonuses
+- [ ] surf_smaragd_fix - 6 stages
+- [ ] surf_smile_njv - 5 stages
+- [ ] surf_spaceship_ksf - 5 checkpoints, 3 bonuses
+- [ ] surf_spectrum_njv - 5 stages
+- [ ] surf_stagejuan_ksf - 7 checkpoints, 3 bonuses
+- [ ] surf_static - 7 stages, 1 bonus
+- [ ] surf_stick - 6 stages
+- [ ] surf_stickybutt_alpha - 4 checkpoints, 1 bonus
+- [ ] surf_stonework2 - 3 checkpoints, 1 bonus
+- [ ] surf_strafe - 2 checkpoints
+- [ ] surf_subway - 3 checkpoints, 3 bonuses
+- [ ] surf_swagtoast - 9 stages, 1 bonus
+- [ ] surf_sylvan - 4 checkpoints, 1 bonus
+- [ ] surf_take1 - 3 checkpoints, 1 bonus
+- [ ] surf_tempest - 3 checkpoints, 3 bonuses
+- [ ] surf_tempest2 - 4 checkpoints, 2 bonuses
+- [ ] surf_tenacious - 4 stages
+- [ ] surf_the_internet - 12 stages, 2 bonuses
+  - Bonus 1 antigrav (OnTrigger -> OnEndTouch)
+- [ ] surf_thembrium_njv - 5 stages, 1 bonus
+- [ ] surf_theunexpected - 3 checkpoints, 3 bonuses
+- [ ] surf_threnody - 3 stages, 2 bonuses - maxvel: 5000
+- [ ] surf_togo - 3 checkpoints, 1 bonus
+- [ ] surf_torque - 4 stages, 2 bonuses
+- [ ] surf_torque2 - 4 stages, 2 bonuses
+- [ ] surf_tron_njv - 3 checkpoints
+- [ ] surf_tronia_refix - 4 stages, 4 bonuses
+- [ ] surf_tropic_ksf - 7 stages, 6 bonuses
+- [ ] surf_two_colour - 6 stages
+- [ ] surf_ultimatum - 6 stages
+- [ ] surf_undergrowth - 3 checkpoints, 3 bonuses
+- [ ] surf_unraveled - 9 stages, 1 bonus - maxvel: 10000
+- [ ] surf_vale - 4 stages, 1 bonus
+- [ ] surf_vale2 - 5 stages, 1 bonus
+- [ ] surf_vegetables - 10 stages, 1 bonus
+- [ ] surf_velocity - 6 stages, 1 bonus
+- [ ] surf_voteforthisone - 8 stages, 2 bonuses
+- [ ] surf_wasteland - 3 stages, 3 bonuses
+- [ ] surf_wasteland2 - 3 stages, 5 bonuses
+- [ ] surf_whoknows_ksf - 4 checkpoints, 1 bonus - maxvel: 10000
+- [ ] surf_wicked - 3 stages, 3 bonuses
+- [ ] surf_wizard - 5 stages, 3 bonuses
+- [ ] surf_yellow - 3 checkpoints, 4 bonuses
+- [ ] surf_zbig2 - 7 stages, 2 bonuses
+- [ ] surf_zeitgeist - 12 stages, 4 bonuses
+- [ ] surf_zion - 5 stages
+- [ ] surf_zoomboys - 4 checkpoints, 2 bonuses
+</details>
+
+<details>
+<summary>Tier 4 (0/214)</summary>
+- [ ] surf_25_lighters - 4 checkpoints, 3 bonuses
+- [ ] surf_4dimensional - 3 stages, 1 bonus
+- [ ] surf_adrift_fix - 4 checkpoints, 1 bonus - maxvel: 10000
+- [ ] surf_adventure_final - 6 checkpoints, 7 bonuses
+- [ ] surf_airflow - 6 stages, 1 bonus
+- [ ] surf_alend - 3 checkpoints
+- [ ] surf_ambient_njv - 4 checkpoints
+- [ ] surf_angst - 4 checkpoints, 3 bonuses
+- [ ] surf_antimatter_v2 - 6 stages
+- [ ] surf_anything - 2 stages, 2 bonuses
+- [ ] surf_apollonian - 9 stages
+- [ ] surf_artifex - 4 stages, 1 bonus
+- [ ] surf_auroria2 - 7 stages, 1 bonus
+- [ ] surf_aux - 2 stages, 2 bonuses
+- [ ] surf_axil - 3 stages, 2 bonuses - maxvel: 4500
+- [ ] surf_axiom - 2 checkpoints, 4 bonuses
+- [ ] surf_banana_fix - 4 stages, 3 bonuses
+- [ ] surf_barbies_malibu_adventure - 5 stages, 9 bonuses
+- [ ] surf_beginner_hell - 7 stages, 1 bonus
+- [ ] surf_beyer - 6 checkpoints, 1 bonus
+- [ ] surf_beyer2 - 6 checkpoints, 5 bonuses
+- [ ] surf_blackside - 5 stages
+- [ ] surf_blub - 5 stages
+  - Stage 2 booster laser
+- [ ] surf_board_this_fix - 6 stages, 8 bonuses
+- [ ] surf_bonk - 5 stages, 2 bonuses
+- [ ] surf_brodderlands - 5 stages, 1 bonus
+  - Stage 4 move reset triggers down a few units
+- [ ] surf_calamity2 - 5 stages
+- [ ] surf_calibration - 6 checkpoints, 1 bonus - maxvel: 10000
+- [ ] surf_cannonball - 4 checkpoints, 2 bonuses - maxvel: 5000
+- [ ] surf_catalyst - 4 checkpoints
+- [ ] surf_catalyst2 - 3 checkpoints
+- [ ] surf_cavity - 2 checkpoints, 4 bonuses
+- [ ] surf_cement - 6 stages, 7 bonuses
+- [ ] surf_chasm - 4 checkpoints, 4 bonuses
+- [ ] surf_chateau_fix - 3 checkpoints, 3 bonuses
+- [ ] surf_collaboration - 8 stages
+- [ ] surf_commune_too_beta5 - 7 stages, 2 bonuses
+- [ ] surf_compulsive_njv_h - 4 stages
+- [ ] surf_concretejungle_fix - 6 stages, 5 bonuses
+- [ ] surf_consistenza_diversa - 7 stages, 2 bonuses
+- [ ] surf_constrictor_remix - 3 checkpoints, 1 bonus
+- [ ] surf_construction - 3 stages, 1 bonus
+- [ ] surf_cordelia - 3 stages
+- [ ] surf_cozy - 2 stages - maxvel: 7500
+- [ ] surf_curious - 3 checkpoints
+- [ ] surf_delta - 5 stages, 2 bonuses
+- [ ] surf_desolate - 4 stages, 3 bonuses
+- [ ] surf_discovery - 5 stages
+- [ ] surf_divided_fix - 5 stages
+- [ ] surf_drifting - 5 stages, 1 bonus - maxvel: 10000
+- [ ] surf_efficacy - 3 checkpoints, 3 bonuses
+- [ ] surf_ember2 - 6 stages, 2 bonuses
+- [ ] surf_emerald - 3 checkpoints, 1 bonus
+- [ ] surf_endeavor - 3 stages, 2 bonuses
+- [ ] surf_epithet - 2 checkpoints, 2 bonuses
+- [ ] surf_eryr - 4 stages, 3 bonuses
+- [ ] surf_eternal_beta - 2 stages
+- [ ] surf_euphoria - 2 stages
+- [ ] surf_exclave_fix - 3 checkpoints
+- [ ] surf_fabas - 5 stages, 4 bonuses
+- [ ] surf_facility - 3 checkpoints, 4 bonuses
+- [ ] surf_finesse_final - 6 stages
+- [ ] surf_fire_eye - 1 checkpoints
+- [ ] surf_firedancer - 4 stages, 7 bonuses
+  - Booster on stage 1 has bad velocity on one side (0 0 200 -> 0 400 400)
+- [ ] surf_forbidden_tomb - 8 stages
+- [ ] surf_forbidden_tomb2 - 8 stages
+- [ ] surf_forbidden_tomb3 - 8 stages
+- [ ] surf_forbidden_tomb4 - 6 checkpoints
+- [ ] surf_fortress_ksf - 6 stages, 6 bonuses
+- [ ] surf_freedom - 5 stages
+- [ ] surf_fuckyall - 3 stages, 1 bonus
+- [ ] surf_fungus - 4 checkpoints, 5 bonuses
+- [ ] surf_gauntlet_final - 2 checkpoints
+- [ ] surf_gekar - 4 stages, 2 bonuses
+- [ ] surf_ghost_busters - 16 stages, 1 bonus
+- [ ] surf_goldarn - 4 checkpoints, 1 bonus
+- [ ] surf_greenhouse - 4 checkpoints, 1 bonus
+- [ ] surf_grotto - 6 stages, 3 bonuses
+- [ ] surf_halloween_fix - 5 stages, 2 bonuses
+- [ ] surf_happyhug - 16 stages, 4 bonuses
+- [ ] surf_hektik - 3 checkpoints, 5 bonuses
+- [ ] surf_hope - 3 stages, 1 bonus
+- [ ] surf_hydrogen - 4 checkpoints
+- [ ] surf_hyper - 5 stages, 1 bonus
+- [ ] surf_hyper2 - 5 stages, 1 bonus
+- [ ] surf_illumination - 5 checkpoints, 6 bonuses
+- [ ] surf_illumination2 - 6 stages, 3 bonuses
+- [ ] surf_infected - 3 checkpoints
+- [ ] surf_inferno - 3 checkpoints, 2 bonuses - maxvel: 5000
+- [ ] surf_infrared - 6 stages, 5 bonuses
+- [ ] surf_injection_njv - 7 stages, 1 bonus
+- [ ] surf_inrage2 - 3 checkpoints, 1 bonus
+- [ ] surf_insignia_b1 - 5 stages
+- [ ] surf_intense_ksf - 4 stages, 2 bonuses
+- [ ] surf_interceptor - 5 stages
+- [ ] surf_ixtab - 6 stages, 1 bonus
+- [ ] surf_jagerbomb - 4 stages, 2 bonuses - maxvel: 10000
+- [ ] surf_jaqen - 3 checkpoints, 3 bonuses
+- [ ] surf_jive - 3 checkpoints, 2 bonuses
+- [ ] surf_junglepics_ksf - 5 checkpoints
+- [ ] surf_kalium - 3 stages, 1 bonus
+- [ ] surf_kalium2 - 6 checkpoints
+- [ ] surf_koa - 3 checkpoints, 1 bonus
+- [ ] surf_lab - 4 checkpoints, 2 bonuses
+- [ ] surf_lax - 7 stages, 3 bonuses
+- [ ] surf_lepidus - 7 stages, 1 bonus
+- [ ] surf_limbo - 5 checkpoints, 2 bonuses - maxvel: 10000
+- [ ] surf_lithium2 - 5 stages
+- [ ] surf_loves_spliff - 7 stages, 1 bonus
+- [ ] surf_loweffort - 5 stages, 1 bonus
+- [ ] surf_lt_unicorn - 6 stages, 4 bonuses - maxvel: 10000
+- [ ] surf_masonry - 2 stages
+- [ ] surf_medley_fix - 7 stages, 4 bonuses
+- [ ] surf_memories - 5 stages, 2 bonuses
+- [ ] surf_mephobia_final - 6 stages, 1 bonus
+- [ ] surf_metalpipes - 4 checkpoints, 4 bonuses
+- [ ] surf_metalwall - 3 checkpoints
+- [ ] surf_monotony_ksf - 5 stages, 2 bonuses
+- [ ] surf_morbid2 - 6 stages, 2 bonuses
+- [ ] surf_mudkip - 4 checkpoints, 5 bonuses - maxvel: 5000
+- [ ] surf_nemesis - 4 checkpoints, 2 bonuses
+- [ ] surf_neoplasma_ksf - 6 stages, 2 bonuses
+- [ ] surf_neoteric_retexture - 5 stages, 4 bonuses
+- [ ] surf_nikolo - 2 checkpoints
+- [ ] surf_nocturn - 5 stages, 2 bonuses - maxvel: 5000
+- [ ] surf_not_so_quick - 4 stages, 6 bonuses
+- [ ] surf_oddworld - 6 stages, 2 bonuses
+- [ ] surf_oompa2 - 3 checkpoints, 1 bonus
+- [ ] surf_orbion - 6 stages
+- [ ] surf_outra - 3 checkpoints, 3 bonuses - maxvel: 4000
+- [ ] surf_overgrowth - 5 stages, 2 bonuses
+- [ ] surf_overgrowth2 - 5 stages, 2 bonuses
+- [ ] surf_pancake - 3 checkpoints, 1 bonus
+- [ ] surf_paradigm - 3 checkpoints, 3 bonuses
+- [ ] surf_parrot_selector_h - 4 checkpoints
+- [ ] surf_polygon - 4 stages, 4 bonuses
+- [ ] surf_proliferation - 5 stages, 2 bonuses
+- [ ] surf_prolix_fix - 3 checkpoints
+- [ ] surf_prosperity_v2 - 7 stages
+- [ ] surf_pure - 7 stages
+- [ ] surf_pyzire_fix - 3 checkpoints, 4 bonuses - maxvel: 10000
+- [ ] surf_qlimax_q - 6 stages
+- [ ] surf_quarantine - 15 stages, 2 bonuses
+- [ ] surf_quartus_ksf - 6 checkpoints
+- [ ] surf_quattro - 4 stages
+- [ ] surf_quickie_fix - 2 checkpoints, 5 bonuses
+- [ ] surf_radiant - 4 checkpoints, 4 bonuses - maxvel: 10000
+- [ ] surf_ragequit - 6 stages
+- [ ] surf_rands - 8 stages, 3 bonuses
+- [ ] surf_redemption_b1 - 4 stages
+- [ ] surf_refraxis - 8 stages, 2 bonuses
+- [ ] surf_resource - 4 stages, 4 bonuses
+- [ ] surf_rez2 - 5 stages, 4 bonuses
+- [ ] surf_rst - 4 stages, 1 bonus
+- [ ] surf_rubiks_cube - 5 stages, 2 bonuses
+- [ ] surf_runewords - 4 stages, 4 bonuses
+- [ ] surf_runewords2 - 4 stages, 6 bonuses
+- [ ] surf_runewords2_lod - 4 checkpoints, 6 bonuses
+- [ ] surf_rustic_v2 - 2 stages, 1 bonus
+- [ ] surf_sacrifice - 3 stages, 1 bonus
+- [ ] surf_salmari - 5 checkpoints
+- [ ] surf_sandman_v2 - 5 stages
+- [ ] surf_santorini2 - 4 checkpoints, 1 bonus
+- [ ] surf_savant_njv - 7 stages, 1 bonus
+- [ ] surf_sc_colours - 9 stages, 1 bonus
+- [ ] surf_sc_essence_v2 - 10 stages, 1 bonus
+- [ ] surf_secluded - 5 stages, 4 bonuses
+- [ ] surf_sempar_njv - 6 stages, 1 bonus
+- [ ] surf_sensation_fix - 4 stages
+- [ ] surf_sentient - 3 checkpoints, 1 bonus
+- [ ] surf_serenity2 - 3 stages, 5 bonuses
+- [ ] surf_sewers - 4 checkpoints
+- [ ] surf_sexplizooimed - 7 stages, 1 bonus
+- [ ] surf_sexyartz_njv - 6 checkpoints
+  - >"no jail version" >look inside >jail triggers not removed
+- [ ] surf_sh - 4 stages
+- [ ] surf_shady_h - 3 checkpoints
+- [ ] surf_shambles - 3 checkpoints, 3 bonuses
+- [ ] surf_sippysip - 4 checkpoints, 2 bonuses
+- [ ] surf_skill8 - 3 checkpoints
+- [ ] surf_slate - 4 stages, 4 bonuses
+  - filtername jank
+- [ ] surf_sleeper - 3 checkpoints, 1 bonus - maxvel: 10000
+- [ ] surf_sluice_final - 5 checkpoints, 5 bonuses
+- [ ] surf_sluice2 - 6 checkpoints, 4 bonuses
+- [ ] surf_stonework - 7 stages
+- [ ] surf_sunday - 3 stages, 3 bonuses
+- [ ] surf_sunset - 6 stages, 1 bonus
+- [ ] surf_sunset2_fix - 6 stages, 1 bonus
+  - Move start trigger to edge (hook as box form and adjust it from there)
+- [ ] surf_symbiosis - 4 checkpoints
+- [ ] surf_synada - 4 checkpoints, 3 bonuses
+- [ ] surf_taq - 3 stages
+- [ ] surf_techsune_css - 3 checkpoints, 1 bonus
+- [ ] surf_tempest4 - 3 checkpoints, 7 bonuses - maxvel: 5000
+- [ ] surf_tensor - 9 stages
+- [ ] surf_tequila - 2 checkpoints, 4 bonuses
+- [ ] surf_theme - 9 stages, 3 bonuses - maxvel: 10000
+  - Stage 4/9 windows always open
+- [ ] surf_this_njv - 2 checkpoints
+- [ ] surf_trapped2 - 6 stages, 2 bonuses
+- [ ] surf_triggered_fix - 5 stages
+- [ ] surf_trihard - 6 stages, 2 bonuses - maxvel: 10000
+- [ ] surf_tundra_v2 - 3 stages, 1 bonus
+- [ ] surf_ultimate_fix - 5 stages
+- [ ] surf_underworld - 3 checkpoints
+- [ ] surf_unreal_njv - 4 checkpoints
+- [ ] surf_vector_final - 4 stages, 1 bonus
+- [ ] surf_vestige_fix - 3 checkpoints, 5 bonuses - maxvel: 5000
+- [ ] surf_vienna - 2 checkpoints, 5 bonuses
+- [ ] surf_volcanic - 3 checkpoints, 1 bonus
+- [ ] surf_warped - 3 checkpoints, 3 bonuses
+- [ ] surf_wazor_ksf - 5 stages
+- [ ] surf_whoknows2 - 5 checkpoints, 1 bonus - maxvel: 5000
+- [ ] surf_whoknows3 - 4 checkpoints - maxvel: 5000
+- [ ] surf_x - 8 stages
+- [ ] surf_y - 24 stages, 3 bonuses
+- [ ] surf_zeonine - 4 stages, 2 bonuses - maxvel: 10000
+</details>
+
+<details>
+<summary>Tier 5 (0/103)</summary>
+- [ ] surf_ab - 25 stages, 6 bonuses
+- [ ] surf_acerbus - 6 stages
+- [ ] surf_again_njv - 4 checkpoints
+- [ ] surf_android_ksf - 7 stages, 3 bonuses
+- [ ] surf_antimatter2 - 5 stages, 5 bonuses
+- [ ] surf_aphelion - 3 checkpoints, 6 bonuses
+- [ ] surf_assail - 3 checkpoints, 4 bonuses
+- [ ] surf_autosave_fix - 5 stages, 5 bonuses
+- [ ] surf_breach - 5 checkpoints, 4 bonuses - maxvel: 10000
+- [ ] surf_brutalist - 4 stages, 1 bonus
+- [ ] surf_castlewalls - 6 stages, 2 bonuses
+- [ ] surf_celestial - 2 checkpoints, 3 bonuses
+- [ ] surf_cinnamon_fix - 3 checkpoints, 3 bonuses - maxvel: 5000
+- [ ] surf_clavius - 6 stages
+- [ ] surf_conserve - 3 checkpoints
+- [ ] surf_core_refix - 6 stages, 2 bonuses
+- [ ] surf_crucible - 3 checkpoints, 1 bonus - maxvel: 5000
+- [ ] surf_crush - 3 checkpoints, 1 bonus
+- [ ] surf_damn - 4 checkpoints, 2 bonuses
+- [ ] surf_damnation - 3 checkpoints, 3 bonuses
+- [ ] surf_diamond_beta1 - 4 stages, 1 bonus
+- [ ] surf_dionysus - 2 checkpoints
+- [ ] surf_disneyland - 7 stages
+- [ ] surf_dova - 2 checkpoints, 2 bonuses
+- [ ] surf_drift - 3 stages - maxvel: 5000
+- [ ] surf_dynamics_fixed - 3 checkpoints, 1 bonus
+- [ ] surf_elysium - 4 stages, 1 bonus
+- [ ] surf_elysium2 - 4 stages, 1 bonus
+- [ ] surf_elysium3 - 4 stages, 2 bonuses
+- [ ] surf_elysium4 - 4 stages, 3 bonuses - maxvel: 4000
+- [ ] surf_enigma - 4 stages, 2 bonuses
+- [ ] surf_entropy_hardmode - 5 stages
+- [ ] surf_eon_fix - 2 checkpoints, 3 bonuses
+- [ ] surf_eryr2_fix - 4 stages, 3 bonuses
+- [ ] surf_excavation - 12 stages, 7 bonuses
+  - Bonus 3 booster (3500)
+- [ ] surf_exocube_h - 5 stages
+- [ ] surf_expel - 3 stages, 6 bonuses - maxvel: 5000
+- [ ] surf_extremex2_5 - 6 stages, 2 bonuses
+- [ ] surf_forsaken - 3 checkpoints, 2 bonuses
+- [ ] surf_freaky - 6 stages
+- [ ] surf_froots2 - 20 stages, 4 bonuses
+- [ ] surf_gary_barlow - 2 stages, 2 bonuses
+- [ ] surf_germania - 6 stages, 2 bonuses
+- [ ] surf_grid_ksf - 9 stages, 4 bonuses
+- [ ] surf_gurus_fix - 7 stages
+- [ ] surf_helloworld - 5 stages, 3 bonuses
+- [ ] surf_hero - 4 stages, 5 bonuses
+- [ ] surf_highlands - 5 stages, 4 bonuses - maxvel: 10000
+- [ ] surf_hollow - 2 checkpoints, 2 bonuses
+- [ ] surf_infamous_ksf - 5 stages, 1 bonus
+- [ ] surf_infected_h - 3 checkpoints
+- [ ] surf_intra - 6 checkpoints
+- [ ] surf_izded - 4 stages, 3 bonuses
+- [ ] surf_kairo - 6 checkpoints, 6 bonuses
+- [ ] surf_kira - 4 stages, 1 bonus
+- [ ] surf_legendary - 7 stages
+- [ ] surf_loentra - 3 checkpoints, 2 bonuses
+- [ ] surf_lolrevlis - 9 stages, 1 bonus
+- [ ] surf_loweffort2 - 6 stages, 5 bonuses
+- [ ] surf_lowestbidder - 3 checkpoints, 1 bonus
+- [ ] surf_map_njv - 4 checkpoints, 1 bonus
+- [ ] surf_mdrn - 2 checkpoints, 4 bonuses
+- [ ] surf_metallic - 5 stages
+- [ ] surf_minecraft_fix - 4 checkpoints, 2 bonuses
+- [ ] surf_misc - 7 stages
+- [ ] surf_monkeys2 - 6 checkpoints, 4 bonuses - maxvel: 10000
+- [ ] surf_muerto - 2 stages, 1 bonus - maxvel: 5000
+- [ ] surf_nesquik - 6 stages, 6 bonuses - maxvel: 10000
+- [ ] surf_nightmare - 6 stages, 1 bonus
+- [ ] surf_nostromo - 4 checkpoints, 2 bonuses
+- [ ] surf_nyze - 5 stages, 2 bonuses
+- [ ] surf_our - 3 checkpoints, 4 bonuses
+- [ ] surf_panta_rhei - 4 stages, 2 bonuses
+- [ ] surf_polonia - 5 stages, 2 bonuses
+- [ ] surf_polytron - 3 checkpoints, 1 bonus
+- [ ] surf_primero_fix - 4 checkpoints, 1 bonus
+- [ ] surf_remeanian - 2 stages, 10 bonuses
+- [ ] surf_revolution_fix - 5 stages, 3 bonuses
+- [ ] surf_rewind - 6 stages, 4 bonuses
+- [ ] surf_salient - 4 stages, 2 bonuses
+- [ ] surf_salient2 - 4 stages, 2 bonuses
+- [ ] surf_salvation - 3 checkpoints, 2 bonuses - maxvel: 4000
+- [ ] surf_selenka - 4 stages, 2 bonuses
+- [ ] surf_selenka2 - 4 stages, 5 bonuses
+- [ ] surf_seraph - 3 checkpoints, 1 bonus
+- [ ] surf_shoria - 5 stages, 1 bonus
+- [ ] surf_skill8_h - 3 checkpoints
+- [ ] surf_smol - 5 stages, 5 bonuses
+- [ ] surf_spacemonkeys - 8 checkpoints, 5 bonuses - maxvel: 9999
+- [ ] surf_stonework3 - 7 stages
+- [ ] surf_strike - 6 stages, 1 bonus
+- [ ] surf_technical - 3 checkpoints, 5 bonuses - maxvel: 9999
+- [ ] surf_technique - 7 stages, 5 bonuses
+- [ ] surf_the_distance - 8 checkpoints, 3 bonuses
+- [ ] surf_timewarp - 5 stages
+- [ ] surf_torrential - 3 checkpoints, 1 bonus - maxvel: 10000
+- [ ] surf_transient - 9 stages, 1 bonus
+- [ ] surf_trapped - 6 stages, 2 bonuses
+- [ ] surf_treefort - 8 stages
+- [ ] surf_tronic_njv - 3 checkpoints, 2 bonuses
+- [ ] surf_tycho_fix - 4 stages, 4 bonuses
+- [ ] surf_unreal2 - 3 stages, 2 bonuses
+- [ ] surf_z - 5 stages, 1 bonus
+</details>
+
+<details>
+<summary>Tier 6 (0/51)</summary>
+- [ ] surf_666 - 6 stages, 6 bonuses - maxvel: 4000
+- [ ] surf_amaro - 4 checkpoints, 1 bonus
+- [ ] surf_angelina - 4 checkpoints, 9 bonuses
+- [ ] surf_atonement - 8 checkpoints, 2 bonuses - maxvel: 10000
+- [ ] surf_autonomy - 4 stages, 1 bonus - maxvel: 4000
+- [ ] surf_bugs - 4 stages, 6 bonuses
+- [ ] surf_chromatic - 12 stages, 4 bonuses - maxvel: 7500
+- [ ] surf_chungus_fungus - 14 stages, 6 bonuses
+- [ ] surf_crimson - 4 checkpoints, 3 bonuses
+- [ ] surf_crush2 - 4 checkpoints, 1 bonus
+- [ ] surf_diet_mountain_dew - 2 checkpoints, 2 bonuses
+- [ ] surf_disaster - 4 checkpoints, 2 bonuses
+- [ ] surf_dread - 5 stages, 2 bonuses
+- [ ] surf_earthmover - 3 stages, 6 bonuses
+- [ ] surf_edge - 6 checkpoints, 3 bonuses
+- [ ] surf_embrace - 5 checkpoints, 6 bonuses
+- [ ] surf_epiphany - 3 stages, 4 bonuses
+- [ ] surf_exile - 5 stages
+- [ ] surf_feudal - 5 stages
+- [ ] surf_garden_h - 10 stages, 3 bonuses
+- [ ] surf_gloomy - 6 stages, 4 bonuses
+- [ ] surf_hades - 7 stages, 2 bonuses
+- [ ] surf_innokia - 5 stages, 4 bonuses
+- [ ] surf_jumble - 2 stages, 4 bonuses
+- [ ] surf_jusched_beta1 - 4 checkpoints
+- [ ] surf_kartune - 5 stages, 6 bonuses
+- [ ] surf_kultur - 6 stages, 6 bonuses - maxvel: 5000
+- [ ] surf_looksmodern - 5 stages
+- [ ] surf_lt_omnific - 18 stages, 3 bonuses - maxvel: 10000
+- [ ] surf_map_h - 4 checkpoints
+- [ ] surf_marah - 4 checkpoints
+- [ ] surf_monkeys - 6 checkpoints, 6 bonuses - maxvel: 10000
+- [ ] surf_north - 5 stages, 4 bonuses
+- [ ] surf_perihelion - 4 checkpoints, 4 bonuses - maxvel: 5000
+- [ ] surf_replicant - 4 stages, 1 bonus
+- [ ] surf_royal_fix - 5 stages
+- [ ] surf_santorini3 - 5 stages, 5 bonuses
+- [ ] surf_sidelines - 5 stages, 1 bonus
+- [ ] surf_sinister_evil - 5 stages, 2 bonuses
+- [ ] surf_sinister2 - 5 stages, 2 bonuses
+- [ ] surf_sinsane_ksf - 3 checkpoints, 1 bonus
+- [ ] surf_solace - 5 stages, 3 bonuses
+- [ ] surf_stitched - 2 stages, 2 bonuses - maxvel: 5000
+- [ ] surf_stonework4 - 7 stages - maxvel: 10000
+- [ ] surf_syria_again - 8 stages
+- [ ] surf_thesteve - 5 stages, 3 bonuses
+- [ ] surf_treespam - 5 stages
+- [ ] surf_valpect - 4 checkpoints, 2 bonuses
+- [ ] surf_weirdcore - 3 checkpoints, 2 bonuses
+- [ ] surf_whynot - 4 stages, 2 bonuses
+- [ ] surf_zen - 4 stages, 3 bonuses
+</details>
+
+<details>
+<summary>Tier 7 (0/29)</summary>
+- [ ] surf_antagonist - 4 stages, 2 bonuses
+  - Align bonus 2 start zone with platform
+- [ ] surf_devil - 4 stages, 1 bonus - maxvel: 5000
+- [ ] surf_exonic - 5 checkpoints, 3 bonuses - maxvel: 5000
+- [ ] surf_gigapede - 6 checkpoints, 6 bonuses - maxvel: 5000
+  - Stripper out spherical brushes (x64 update crashfix)
+- [ ] surf_goliath - 4 stages, 4 bonuses - maxvel: 5000
+- [ ] surf_hades2 - 6 stages, 5 bonuses
+- [ ] surf_hardline - 5 stages, 4 bonuses
+- [ ] surf_helljumper - 3 checkpoints, 5 bonuses
+- [ ] surf_not_so_prosurf - 10 stages, 7 bonuses
+- [ ] surf_nsz_fix - 5 checkpoints, 6 bonuses - maxvel: 10000
+- [ ] surf_offskill - 4 stages, 1 bonus - maxvel: 4000
+- [ ] surf_olivia - 3 checkpoints, 5 bonuses
+- [ ] surf_original - 7 checkpoints, 1 bonus - maxvel: 10000
+- [ ] surf_pls - 8 checkpoints, 10 bonuses
+- [ ] surf_prosurf - 5 stages, 5 bonuses - maxvel: 5000
+- [ ] surf_raphaello - 4 checkpoints, 2 bonuses
+- [ ] surf_ruse - 6 stages, 10 bonuses
+- [ ] surf_shade - 2 checkpoints, 7 bonuses
+- [ ] surf_shibboleth - 5 stages, 10 bonuses
+- [ ] surf_shodan - 4 checkpoints, 10 bonuses
+- [ ] surf_sidistic - 7 checkpoints
+- [ ] surf_spectra - 6 checkpoints, 2 bonuses - maxvel: 5000
+- [ ] surf_starvald - 3 checkpoints, 4 bonuses
+- [ ] surf_topology - 10 stages
+- [ ] surf_twist - 4 checkpoints, 2 bonuses
+- [ ] surf_vacant - 5 checkpoints, 2 bonuses - maxvel: 5000
+- [ ] surf_vast - 5 stages, 1 bonus
+- [ ] surf_whynot2 - 5 checkpoints, 2 bonuses
+- [ ] surf_zen2 - 4 stages, 5 bonuses
+</details>
+
+<details>
+<summary>Tier 8 (0/7)</summary>
+- [ ] surf_anubis_ksf - 3 stages, 9 bonuses
+- [ ] surf_corruption - 7 checkpoints, 6 bonuses - maxvel: 10000
+- [ ] surf_deity_ksf - 5 stages
+- [ ] surf_doomsday - 4 stages, 2 bonuses - maxvel: 9999
+- [ ] surf_joutsenlaulu - 9 checkpoints, 4 bonuses - maxvel: 10000
+- [ ] surf_sinsane2 - 4 checkpoints, 4 bonuses
+- [ ] surf_tensor2 - 8 stages, 6 bonuses
+</details>
+
+## Timer Todo
+These are just nice to haves, there is no guarantee I myself will implement them personally.
+
+- zones: start zone teleport position
 - zones-json: create file if not existing when calling editmi
 - zones-json: remove `possible_on_*`, maybe add actual metadata (maxvel, authors, creation date)
-- zones: custom zone names for bonus credits or maps like classics, progress
+- zones: custom zone names for bonus/stage credits or maps like classics(2), progress linear route, unraveled
+
+## Contributing
+Just make zones and run `sm_dumpzones` when you're done and PR the JSON files (located at
+`addons/sourcemod/data/zones-strike`)
+
+When hooking triggers as zones with multiple of the same name (e.g. two exits, autobhop/nojump), I usually hook them by
+hammerid as I do not think multiple of the same targetname work properly if I am remembering correctly.
+
+Some maps have triggers that do not like to trigger properly when hooked and may need to be hooked as box form. Please
+test your zones before submitting.
+
+### Autobhop zones
+Other servers that aren't KSF tend to keep autobunnyhopping on. Zoning autobhop zones is encouraged but not required.
+If you *did not* add any please make that clear in your PR.
+
+Please only make autobhop zones where it makes sense if triggers do not exist for it.
+
+If the map is a staged-linear and there are no autobhop zones (e.g. surf_race) or a map has a bhop bonus that is way too
+large to be able to be wrapped in an autobhop zone (e.g. surf_enlightened bonus 1), then it is okay to add
+`sv_autobunnyhopping 1` into `shavit-mapfixes.cfg`.
