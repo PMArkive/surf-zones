@@ -30,6 +30,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 
 <details>
 <summary>Tier 1 (55/73)</summary>
+
 - [x] surf_1998 - 5 stages, 1 bonus
   - Stage 3 skip needs lasers
   - Stage 3 needs booster fix fix (OnStartTouch -> OnEndTouch)
@@ -125,10 +126,12 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_whiteout - 6 stages, 1 bonus
 - [ ] surf_year3000 - 2 stages
 - [ ] surf_zoomathon - 7 checkpoints - maxvel: 5000
+
 </details>
 
 <details>
 <summary>Tier 2 (0/166)</summary>
+
 - [ ] surf_004_fix - 3 checkpoints
 - [ ] surf_2pacisalive - 2 checkpoints, 1 bonus - maxvel: 5000
 - [ ] surf_4head - 3 checkpoints, 4 bonuses
@@ -298,10 +301,12 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_zealand - 3 checkpoints, 2 bonuses
 - [ ] surf_zenith - 3 checkpoints, 1 bonus
 - [ ] surf_zor - 2 checkpoints, 1 bonus - maxvel: 5000
+
 </details>
 
 <details>
 <summary>Tier 3 (0/256)</summary>
+
 - [ ] surf_1day - 11 stages, 1 bonus
 - [ ] surf_2012_beta12 - 6 stages, 1 bonus
 - [ ] surf_a - 5 stages
@@ -563,10 +568,12 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_zeitgeist - 12 stages, 4 bonuses
 - [ ] surf_zion - 5 stages
 - [ ] surf_zoomboys - 4 checkpoints, 2 bonuses
+
 </details>
 
 <details>
 <summary>Tier 4 (0/214)</summary>
+
 - [ ] surf_25_lighters - 4 checkpoints, 3 bonuses
 - [ ] surf_4dimensional - 3 stages, 1 bonus
 - [ ] surf_adrift_fix - 4 checkpoints, 1 bonus - maxvel: 10000
@@ -788,10 +795,12 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_x - 8 stages
 - [ ] surf_y - 24 stages, 3 bonuses
 - [ ] surf_zeonine - 4 stages, 2 bonuses - maxvel: 10000
+
 </details>
 
 <details>
 <summary>Tier 5 (0/103)</summary>
+
 - [ ] surf_ab - 25 stages, 6 bonuses
 - [ ] surf_acerbus - 6 stages
 - [ ] surf_again_njv - 4 checkpoints
@@ -896,10 +905,12 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_tycho_fix - 4 stages, 4 bonuses
 - [ ] surf_unreal2 - 3 stages, 2 bonuses
 - [ ] surf_z - 5 stages, 1 bonus
+
 </details>
 
 <details>
 <summary>Tier 6 (0/51)</summary>
+
 - [ ] surf_666 - 6 stages, 6 bonuses - maxvel: 4000
 - [ ] surf_amaro - 4 checkpoints, 1 bonus
 - [ ] surf_angelina - 4 checkpoints, 9 bonuses
@@ -951,10 +962,12 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_weirdcore - 3 checkpoints, 2 bonuses
 - [ ] surf_whynot - 4 stages, 2 bonuses
 - [ ] surf_zen - 4 stages, 3 bonuses
+
 </details>
 
 <details>
 <summary>Tier 7 (0/29)</summary>
+
 - [ ] surf_antagonist - 4 stages, 2 bonuses
   - Align bonus 2 start zone with platform
 - [ ] surf_devil - 4 stages, 1 bonus - maxvel: 5000
@@ -986,10 +999,12 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_vast - 5 stages, 1 bonus
 - [ ] surf_whynot2 - 5 checkpoints, 2 bonuses
 - [ ] surf_zen2 - 4 stages, 5 bonuses
+
 </details>
 
 <details>
 <summary>Tier 8 (0/7)</summary>
+
 - [ ] surf_anubis_ksf - 3 stages, 9 bonuses
 - [ ] surf_corruption - 7 checkpoints, 6 bonuses - maxvel: 10000
 - [ ] surf_deity_ksf - 5 stages
@@ -997,6 +1012,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_joutsenlaulu - 9 checkpoints, 4 bonuses - maxvel: 10000
 - [ ] surf_sinsane2 - 4 checkpoints, 4 bonuses
 - [ ] surf_tensor2 - 8 stages, 6 bonuses
+
 </details>
 
 ## Timer Todo
