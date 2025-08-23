@@ -29,11 +29,10 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 (last updated 2025/08/22)
 
 <details>
-<summary>Tier 1 (58/73)</summary>
+<summary>Tier 1 (71/73)</summary>
 
 - [x] surf_1998 - 5 stages, 1 bonus
   - Stage 3 skip needs lasers
-  - Stage 3 needs booster fix fix (OnStartTouch -> OnEndTouch)
 - [x] surf_4am - 7 stages, 6 bonuses
   - Start zone realignment (592 400 14272 -> 600 408 14272)
   - Stage 4 needs skip fix (direct entry into first teleport)
@@ -48,8 +47,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [x] surf_artois - 5 stages, 5 bonuses
 - [x] surf_aser - 6 stages
 - [x] surf_aura - 6 stages, 8 bonuses
-- [ ] surf_awp_sk337_v3 - 3 checkpoints
-  - Needs heavy Stripper work to remove combat logic (long start wait time, jail teleports I think)
+- [x] surf_awp_sk337_v3 - 3 checkpoints
 - [x] surf_beginner - 7 stages
 - [x] surf_benevolent_refix - 7 stages, 1 bonus
 - [x] surf_beyond - 10 stages, 2 bonuses
@@ -76,13 +74,11 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [x] surf_forgotten - 2 checkpoints, 6 bonuses
 - [x] surf_fornax - 2 checkpoints, 7 bonuses - maxvel: 5000
 - [x] surf_frost - 2 checkpoints, 8 bonuses
-- [ ] surf_funhouse_v1 - 3 checkpoints
-  - Stripper work is needed to pause all the moving things and redirect jail teleports
+- [x] surf_funhouse_v1 - 3 checkpoints
 - [x] surf_garden - 10 stages, 3 bonuses
 - [x] surf_gradent - 6 stages, 1 bonus - maxvel: 10000
 - [x] surf_hourglass - 2 checkpoints - maxvel: 5000
 - [x] surf_kepler - 9 stages, 2 bonuses
-  - Some of the zones are a bit eronious as the triggers won't hook properly (non-issue unless it wants to be investigated)
 - [x] surf_kitsune - 9 stages
 - [x] surf_lament_ksf - 3 checkpoints, 1 bonus
 - [x] surf_leet_xl_beta7z - 1 checkpoint
@@ -98,34 +94,30 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [x] surf_mom_fix - 6 stages, 1 bonus
 - [x] surf_n_turf - 6 stages, 10 bonuses - maxvel: 10000
 - [x] surf_network2008_final - 3 checkpoints, 1 bonus
-  - Forgot this map has a bonus, needs to be zoned
 - [x] surf_nuclear - 2 stages, 2 bonuses
-  - Missing autobhop zone for top of end
 - [x] surf_nyx - 2 checkpoints, 3 bonuses - maxvel: 4000
 - [x] surf_pantheon - 3 checkpoints, 3 bonuses - maxvel: 10000
-- [ ] surf_pox - 2 checkpoints
-  - Stripper jail teleports
+- [x] surf_pox - 2 checkpoints
 - [x] surf_prelude_fix - 3 checkpoints
 - [ ] surf_prime_time_r3vamp - 2 stages
   - Stripper jail teleports and remove breakable windows on stage 2
 - [x] surf_race_final - 6 stages, 5 bonuses - maxvel: 10000
-- [ ] surf_rebel_resistance_final3 - 2 checkpoints
-  - Stripper breakable windows and jail teleports
+- [x] surf_rebel_resistance_final3 - 2 checkpoints
 - [x] surf_rebel_scaz_ksf - 2 checkpoints, 1 bonus
 - [x] surf_santorini_ksf - 8 stages, 5 bonuses
 - [x] surf_satellite_fix - 2 checkpoints
 - [x] surf_school_fix - 10 stages, 1 bonus
 - [x] surf_sodacity - 5 stages, 6 bonuses
 - [x] surf_summit - 3 checkpoints, 3 bonuses - maxvel: 10000
-- [ ] surf_sundown - 4 checkpoints
-- [ ] surf_tendies - 4 checkpoints, 3 bonuses - maxvel: 5000
-- [ ] surf_trance - 4 checkpoints, 1 bonus
+- [x] surf_sundown - 4 checkpoints
+- [x] surf_tendies - 4 checkpoints, 3 bonuses - maxvel: 5000
+- [x] surf_trance - 4 checkpoints, 1 bonus
 - [x] surf_utopia_njv - 3 checkpoints
-- [ ] surf_void - 2 checkpoints - maxvel: 5000
-- [ ] surf_water_run_ksf - 4 stages, 1 bonus
-- [ ] surf_whiteout - 6 stages, 1 bonus
-- [ ] surf_year3000 - 2 stages
-- [ ] surf_zoomathon - 7 checkpoints - maxvel: 5000
+- [x] surf_void - 2 checkpoints - maxvel: 5000
+- [x] surf_water_run_ksf - 4 stages, 1 bonus
+- [x] surf_whiteout - 6 stages, 1 bonus
+- [x] surf_year3000 - 2 stages
+- [x] surf_zoomathon - 7 checkpoints - maxvel: 5000
 
 </details>
 
@@ -1030,8 +1022,8 @@ Just make zones and run `sm_dumpzones` when you're done and PR the JSON files (l
 When hooking triggers as zones with multiple of the same name (e.g. two exits, autobhop/nojump), I usually hook them by
 hammerid as I do not think multiple of the same targetname work properly if I am remembering correctly.
 
-Some maps have triggers that do not like to trigger properly when hooked and may need to be hooked as box form. Please
-test your zones before submitting.
+Some maps have triggers that do not like to trigger properly when hooked and may need to have their spawnflags fixed
+with Stripper (otherwise hook as box form if its not at a weird angle). Please test your zones before submitting.
 
 ### Autobhop zones
 Other servers that aren't KSF tend to keep autobunnyhopping on. Zoning autobhop zones is encouraged but not required.
