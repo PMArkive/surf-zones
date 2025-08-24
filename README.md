@@ -26,7 +26,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - Requires [shavit-style-backwards](https://github.com/PMArkive/random-shavit-bhoptimer-stuff/blob/main/shavit-style-backwards.sp) for backwards style
 
 ## Map List + Notes
-(last updated 2025/08/22)
+(last updated 2025/08/24)
 
 <details>
 <summary>Tier 1 (71/73)</summary>
@@ -122,7 +122,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 </details>
 
 <details>
-<summary>Tier 2 (0/166)</summary>
+<summary>Tier 2 (0/167)</summary>
 
 - [ ] surf_004_fix - 3 checkpoints
 - [ ] surf_2pacisalive - 2 checkpoints, 1 bonus - maxvel: 5000
@@ -132,6 +132,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_8bit - 3 stages, 1 bonus
 - [ ] surf_abandoned - 5 checkpoints, 4 bonuses
 - [ ] surf_activation - 4 stages, 4 bonuses
+- [ ] surf_affliction - 3 checkpoints, 10 bonuses - maxvel: 10000
 - [ ] surf_aether - 4 checkpoints
 - [ ] surf_agony - 3 checkpoints, 1 bonus
 - [ ] surf_amplitude_encore - 5 checkpoints
