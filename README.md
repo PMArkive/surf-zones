@@ -26,10 +26,10 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - Requires [shavit-style-backwards](https://github.com/PMArkive/random-shavit-bhoptimer-stuff/blob/main/shavit-style-backwards.sp) for backwards style
 
 ## Map List + Notes
-(last updated 2025/08/24)
+(last updated 2025/08/27)
 
 <details>
-<summary>Tier 1 (71/73)</summary>
+<summary>Tier 1 (73/73)</summary>
 
 - [x] surf_1998 - 5 stages, 1 bonus
   - Stage 3 skip needs lasers
@@ -58,7 +58,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [x] surf_botanica - 4 stages, 6 bonuses
 - [x] surf_calycate_ksf - 2 checkpoints, 1 bonus
 - [x] surf_calycate2 - 2 checkpoints, 1 bonus
-- [ ] surf_chaos_fix - 3 stages, 1 bonus
+- [x] surf_chaos_fix - 3 stages, 1 bonus
   - Lasers on start platform and various walls
   - <sub><sub>remove the screamer room triggers</sub></sub>
 - [x] surf_citypop - 2 checkpoints, 4 bonuses - maxvel: 5000
@@ -76,7 +76,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [x] surf_frost - 2 checkpoints, 8 bonuses
 - [x] surf_funhouse_v1 - 3 checkpoints
 - [x] surf_garden - 10 stages, 3 bonuses
-- [x] surf_gradent - 6 stages, 1 bonus - maxvel: 10000
+- [x] surf_gradient - 6 stages, 1 bonus - maxvel: 10000
 - [x] surf_hourglass - 2 checkpoints - maxvel: 5000
 - [x] surf_kepler - 9 stages, 2 bonuses
 - [x] surf_kitsune - 9 stages
@@ -99,8 +99,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [x] surf_pantheon - 3 checkpoints, 3 bonuses - maxvel: 10000
 - [x] surf_pox - 2 checkpoints
 - [x] surf_prelude_fix - 3 checkpoints
-- [ ] surf_prime_time_r3vamp - 2 stages
-  - Stripper jail teleports and remove breakable windows on stage 2
+- [x] surf_prime_time_r3vamp - 2 stages
 - [x] surf_race_final - 6 stages, 5 bonuses - maxvel: 10000
 - [x] surf_rebel_resistance_final3 - 2 checkpoints
 - [x] surf_rebel_scaz_ksf - 2 checkpoints, 1 bonus
@@ -122,16 +121,17 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 </details>
 
 <details>
-<summary>Tier 2 (0/167)</summary>
+<summary>Tier 2 (7/167)</summary>
 
-- [ ] surf_004_fix - 3 checkpoints
-- [ ] surf_2pacisalive - 2 checkpoints, 1 bonus - maxvel: 5000
-- [ ] surf_4head - 3 checkpoints, 4 bonuses
-- [ ] surf_6 - 2 checkpoints, 1 bonus
+- [x] surf_004_fix - 3 checkpoints
+- [x] surf_2pacisalive - 2 checkpoints, 1 bonus - maxvel: 5000
+- [x] surf_4head - 3 checkpoints, 4 bonuses
+- [x] surf_6 - 2 checkpoints, 1 bonus
 - [ ] surf_81st_network - 5 stages, 1 bonus
-- [ ] surf_8bit - 3 stages, 1 bonus
-- [ ] surf_abandoned - 5 checkpoints, 4 bonuses
-- [ ] surf_activation - 4 stages, 4 bonuses
+- [x] surf_8bit - 3 stages, 1 bonus
+  - !r wants to start at stage 2 for some reason???
+- [x] surf_abandoned - 5 checkpoints, 4 bonuses
+- [x] surf_activation - 4 stages, 4 bonuses
 - [ ] surf_affliction - 3 checkpoints, 10 bonuses - maxvel: 10000
 - [ ] surf_aether - 4 checkpoints
 - [ ] surf_agony - 3 checkpoints, 1 bonus
@@ -166,7 +166,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_domain - 3 checkpoints, 2 bonuses
 - [ ] surf_doodles_njv - 9 stages, 1 bonus
 - [ ] surf_dragon - 3 checkpoints, 1 bonus
-- [ ] surf_driftless - 3 checkpoints, 1 bonus
+- [x] surf_driftless - 3 checkpoints, 1 bonus
 - [ ] surf_duggywuggy - 3 checkpoints, 1 bonus
 - [ ] surf_ebony - 4 checkpoints, 4 bonuses - maxvel: 5000
 - [ ] surf_echo - 2 checkpoints, 3 bonuses
