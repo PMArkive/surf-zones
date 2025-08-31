@@ -950,6 +950,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_stonework4 - 7 stages - maxvel: 10000
 - [ ] surf_syria_again - 8 stages
 - [ ] surf_thesteve - 5 stages, 3 bonuses
+- [ ] surf_tormentor - 5 stages, 10 bonuses
 - [ ] surf_treespam - 5 stages
 - [ ] surf_valpect - 4 checkpoints, 2 bonuses
 - [ ] surf_weirdcore - 3 checkpoints, 2 bonuses
