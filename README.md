@@ -26,10 +26,10 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - Requires [shavit-style-backwards](https://github.com/PMArkive/random-shavit-bhoptimer-stuff/blob/main/shavit-style-backwards.sp) for backwards style
 
 ## Map List + Notes
-(last updated 2025/08/27)
+(last updated 2025/09/14)
 
 <details>
-<summary>Tier 1 (73/73)</summary>
+<summary>Tier 1 (73/74)</summary>
 
 - [x] surf_1998 - 5 stages, 1 bonus
   - Stage 3 skip needs lasers
@@ -107,6 +107,8 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [x] surf_satellite_fix - 2 checkpoints
 - [x] surf_school_fix - 10 stages, 1 bonus
 - [x] surf_sodacity - 5 stages, 6 bonuses
+- [ ] surf_sofia - 3 checkpoints, 3 bonuses - maxvel: 10000
+  - "cp1 moved to block unwanted skip, crossing forced instead of staying on same side"
 - [x] surf_summit - 3 checkpoints, 3 bonuses - maxvel: 10000
 - [x] surf_sundown - 4 checkpoints
 - [x] surf_tendies - 4 checkpoints, 3 bonuses - maxvel: 5000
