@@ -107,7 +107,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [x] surf_satellite_fix - 2 checkpoints
 - [x] surf_school_fix - 10 stages, 1 bonus
 - [x] surf_sodacity - 5 stages, 6 bonuses
-- [ ] surf_sofia - 3 checkpoints, 3 bonuses - maxvel: 10000
+- [ ] surf_sofia_fix - 3 checkpoints, 3 bonuses - maxvel: 10000
   - "cp1 moved to block unwanted skip, crossing forced instead of staying on same side"
 - [x] surf_summit - 3 checkpoints, 3 bonuses - maxvel: 10000
 - [x] surf_sundown - 4 checkpoints
