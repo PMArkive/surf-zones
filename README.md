@@ -904,7 +904,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 </details>
 
 <details>
-<summary>Tier 6 (0/52)</summary>
+<summary>Tier 6 (0/53)</summary>
 
 - [ ] surf_666 - 6 stages, 6 bonuses - maxvel: 4000
 - [ ] surf_amaro - 4 checkpoints, 1 bonus
@@ -951,6 +951,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_stitched - 2 stages, 2 bonuses - maxvel: 5000
 - [ ] surf_stonework4 - 7 stages - maxvel: 10000
 - [ ] surf_syria_again - 8 stages
+- [ ] surf_techslop - 4 stages, 4 bonuses
 - [ ] surf_thesteve - 5 stages, 3 bonuses
 - [ ] surf_tormentor - 5 stages, 10 bonuses
 - [ ] surf_treespam - 5 stages
