@@ -26,7 +26,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - Requires [shavit-style-backwards](https://github.com/PMArkive/random-shavit-bhoptimer-stuff/blob/main/shavit-style-backwards.sp) for backwards style
 
 ## Map List + Notes
-(last updated 2025/10/11)
+(last updated 2025/10/12)
 
 <details>
 <summary>Tier 1 (73/74)</summary>
@@ -796,7 +796,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 </details>
 
 <details>
-<summary>Tier 5 (0/104)</summary>
+<summary>Tier 5 (0/103)</summary>
 
 - [ ] surf_ab - 25 stages, 6 bonuses
 - [ ] surf_acerbus - 6 stages
@@ -835,7 +835,6 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_excavation - 12 stages, 7 bonuses
   - Bonus 3 booster (3500)
 - [ ] surf_exocube_h - 5 stages
-- [ ] surf_expel - 3 stages, 6 bonuses - maxvel: 5000
 - [ ] surf_extremex2_5 - 6 stages, 2 bonuses
 - [ ] surf_forsaken - 3 checkpoints, 2 bonuses
 - [ ] surf_freaky - 6 stages
@@ -907,7 +906,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 </details>
 
 <details>
-<summary>Tier 6 (0/52)</summary>
+<summary>Tier 6 (0/54)</summary>
 
 - [ ] surf_666 - 6 stages, 6 bonuses - maxvel: 4000
 - [ ] surf_amaro - 4 checkpoints, 1 bonus
@@ -927,6 +926,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_embrace - 5 checkpoints, 6 bonuses
 - [ ] surf_epiphany - 3 stages, 4 bonuses
 - [ ] surf_exile - 5 stages
+- [ ] surf_expel - 3 stages, 6 bonuses - maxvel: 5000
 - [ ] surf_feudal - 5 stages
 - [ ] surf_garden_h - 10 stages, 3 bonuses
 - [ ] surf_gloomy - 6 stages, 4 bonuses
