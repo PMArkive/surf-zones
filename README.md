@@ -26,7 +26,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - Requires [shavit-style-backwards](https://github.com/PMArkive/random-shavit-bhoptimer-stuff/blob/main/shavit-style-backwards.sp) for backwards style
 
 ## Map List + Notes
-(last updated 2025/10/19)
+(last updated 2025/10/26)
 
 <details>
 <summary>Tier 1 (73/74)</summary>
@@ -966,11 +966,12 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 </details>
 
 <details>
-<summary>Tier 7 (0/30)</summary>
+<summary>Tier 7 (0/31)</summary>
 
 - [ ] surf_antagonist - 4 stages, 2 bonuses
   - Align bonus 2 start zone with platform
 - [ ] surf_devil - 4 stages, 1 bonus - maxvel: 5000
+- [ ] surf_dune - 3 stages, 10 bonuses
 - [ ] surf_exonic - 5 checkpoints, 3 bonuses - maxvel: 5000
 - [ ] surf_gigapede - 6 checkpoints, 6 bonuses - maxvel: 5000
   - Stripper out spherical brushes (x64 update crashfix)
