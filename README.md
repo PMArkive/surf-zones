@@ -971,7 +971,7 @@ Attempts to mimic KSF's zoning and stripper files as best as possible.
 - [ ] surf_antagonist - 4 stages, 2 bonuses
   - Align bonus 2 start zone with platform
 - [ ] surf_devil - 4 stages, 1 bonus - maxvel: 5000
-- [ ] surf_dune - 3 stages, 10 bonuses
+- [ ] surf_dune - 3 stages, 10 bonuses - maxvel: 10000
 - [ ] surf_exonic - 5 checkpoints, 3 bonuses - maxvel: 5000
 - [ ] surf_gigapede - 6 checkpoints, 6 bonuses - maxvel: 5000
   - Stripper out spherical brushes (x64 update crashfix)
